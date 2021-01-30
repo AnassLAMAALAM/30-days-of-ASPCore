@@ -34,7 +34,7 @@ namespace client_management_asp_core_api.Models
             //.HasForeignKey(p => p.ClientForeignKey);
         }
 
-        private const string connectionString = "server=localhost;port=3307;database=client_management_db;user=root;password=''";
+        private const string connectionString = "server=localhost;port=3306;database=client_management_db;user=root;password=''";
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseMySql(connectionString);

@@ -58,6 +58,7 @@ namespace client_management_asp_core_api
             {
                 endpoints.MapControllers();
             });
+
         }
     }
 }
