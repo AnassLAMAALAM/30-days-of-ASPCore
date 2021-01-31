@@ -9,8 +9,8 @@ using client_management_asp_core_api.Models;
 namespace client_management_asp_core_api.Migrations
 {
     [DbContext(typeof(ClientManagementDBContext))]
-    [Migration("20210113013358_initialCreate")]
-    partial class initialCreate
+    [Migration("20210131003247_CreateClientMigrations")]
+    partial class CreateClientMigrations
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -25,16 +25,10 @@ namespace client_management_asp_core_api.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("Email")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
                     b.Property<string>("FirstName")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("LastName")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<string>("Phone")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("_Contact")
